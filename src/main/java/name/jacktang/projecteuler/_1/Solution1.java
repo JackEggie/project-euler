@@ -1,3 +1,5 @@
+package name.jacktang.projecteuler._1;
+
 public class Solution1 {
 	public static void main(String[] args) {
 		int sum = 0;
