@@ -1,9 +1,7 @@
 package name.jacktang.projecteuler._2;
 
 public class Solution {
-	public static void main(String[] args) {
-		long now = System.currentTimeMillis();
-
+	public int resolve() {
 		int a = 1;
 		int b = 2;
 
@@ -24,8 +22,6 @@ public class Solution {
 			}
 			i++;
 		}
-		System.out.println(sum);
-
-		System.out.println("Cost: " + (System.currentTimeMillis() - now) + "ms");
+		return sum;
 	}
 }

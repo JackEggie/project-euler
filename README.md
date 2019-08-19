@@ -1,8 +1,28 @@
+### Language
+
+English | [简体中文](/README-zh_CN.md)
+
 ### Introduction
 
 This project is my personal translation and solution for the [Euler Project](https://projecteuler.net/). 
 
-It should only be used for personal study usage. If you find any abuse, please raise an issue in this repository and report it.
+> This project should only be used for personal study usage. If you find any abuse, please [contact me](mailto:er_tzw@163.com) or [report it](https://github.com/jackeggie/project-euler/issues/new).
+
+### How To Use This Project
+
+You can find the answer below, but I extremely don't recommend you to just copy the answer.
+
+This is a Maven project. You can find the Java solution in my code, and you can test the solution with my test cases.
+
+### Problems
+
+| No   | Title                                                                  | Answer  | Performance     |
+| ---- | ---------------------------------------------------------------------- | ------- | --------------- |
+| 1    | [Multiples of 3 and 5](/src/main/java/name/jacktang/projecteuler/_1)   | 233168  | less than 10 ms |
+| 2    | [Even Fibonacci numbers](/src/main/java/name/jacktang/projecteuler/_2) | 4613732 | less than 10 ms |
+| 3    | [Largest prime factor](/src/main/java/name/jacktang/projecteuler/_3)   | 6857    | less than 10 ms |
+
+I am working hard on the rest problems...
 
 ### About translation
 
