@@ -16,6 +16,16 @@ public class MathUtil {
 		return true;
 	}
 
+	public static boolean isPalindrome(int num) {
+		String numString = String.valueOf(num);
+		for (int i = 0; i < numString.length() / 2 + 1; i++) {
+			if (numString.charAt(i) != numString.charAt(numString.length() - i - 1)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public static TreeSet<Long> getFactors(long num) {
 		TreeSet<Long> factors = new TreeSet<>();
 		for (long factor = 2; factor < num; factor++) {
