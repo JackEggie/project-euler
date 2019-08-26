@@ -26,6 +26,10 @@ public class MathUtil {
 		return true;
 	}
 
+	/**
+	 * @param num a positive number at least 2
+	 * @return a set of factors in asc order
+	 */
 	public static TreeSet<Long> getFactors(long num) {
 		TreeSet<Long> factors = new TreeSet<>();
 		for (long factor = 2; factor < num; factor++) {
@@ -36,5 +40,21 @@ public class MathUtil {
 			}
 		}
 		return factors;
+	}
+
+	public static long isPowerNumber(long num, long maxBase) {
+		for (long base = 2; base <= maxBase; base++) {
+			long devision = num;
+			while (devision != 1) {
+				if (devision % base != 0) {
+					break;
+				}
+				devision /= base;
+			}
+			if (devision == 1) {
+				return base;
+			}
+		}
+		return 0;
 	}
 }
