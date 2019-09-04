@@ -9,6 +9,6 @@ public class Solution {
 			squareSum += i * i;
 		}
 		long sumSquare = sum * sum;
-		return sumSquare > squareSum ? sumSquare - squareSum :squareSum - sumSquare;
+		return sumSquare > squareSum ? sumSquare - squareSum : squareSum - sumSquare;
 	}
 }

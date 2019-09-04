@@ -24,6 +24,7 @@
 | 4     | [最大回文乘积](/src/main/java/name/jacktang/projecteuler/_4)           | 906609    | 低于 20 ms      |
 | 5     | [最小公倍数](/src/main/java/name/jacktang/projecteuler/_5)             | 232792560 | 低于 10 ms      |
 | 6     | [平方和与和平方之差](/src/main/java/name/jacktang/projecteuler/_6)      | 25164150  | 低于 10 ms      |
+| 7     | [第 10001 个质数](/src/main/java/name/jacktang/projecteuler/_7)        | 104743    | 低于 5 s        |
 
 未完待续……
 
