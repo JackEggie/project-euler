@@ -8,6 +8,6 @@ public class Validation {
 
 	@Test
 	public void validate() {
-		Assert.assertEquals(new Solution().resolve(), 25164150);
+		Assert.assertEquals(25164150, new Solution().resolve());
 	}
 }
