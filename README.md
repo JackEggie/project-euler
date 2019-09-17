@@ -29,10 +29,34 @@ This is a Maven project. You can find the Java solution in my code, and you can 
 
 I am working hard on the rest problems...
 
-### About translation
-
-Typesetting rules are according to [Gold Miner Translation Typesetting Rules](https://github.com/xitu/gold-miner/wiki/%E8%AF%91%E6%96%87%E6%8E%92%E7%89%88%E8%A7%84%E5%88%99%E6%8C%87%E5%8C%97).
-
-### About mathematical formula
+### About Mathematical Formula
 
 Please install the [Google Chrome plugin](https://github.com/orsharir/github-mathjax) to display LaTeX or Mathjax expression correctly.
+
+### Knowledge Base
+
+#### Factor
+
+In mathematics, a divisor of an integer n, also called a factor of n, is an integer m that may be multiplied by some integer to produce n.
+
+1. How to find factors of an integer?
+
+Find the smallest factor, and divide it. Just repeat that. See [my implementation](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java).
+
+Or you can easily get the factors by [Factor Calculator](https://www.calculator.net/factor-calculator.html).
+
+2. [Unique Factorization Theorem](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
+
+每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
+
+如果你对因数有更多的疑问，请参见[因数](https://zh.wikipedia.org/wiki/%E5%9B%A0%E6%95%B8)。
+
+#### 质数
+
+在大于 1 的自然数中，除了 1 和该数自身外，无法被其他自然数整除的数。
+
+1. 如何判断一个数是否质数
+
+判断最小因数是否自身相等。参见[本项目实现](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java)。
+
+如果你对质数有更多的疑问，请参见[质数](https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0)。
