@@ -1,10 +1,10 @@
-## Language
+## 语言
 
-English | [简体中文](README-zh_CN.md)
+[English](README.md) | 简体中文
 
-## [Largest product in a series](https://projecteuler.net/problem=8)
+## [数列中的最大乘积](https://projecteuler.net/problem=8)
 
-The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
+下面 1000 个数字中乘积最大的 4 个相邻数字为 9 × 9 × 8 × 9 = 5832。
 
 ```text
 73167176531330624919225119674426574742355349194934
@@ -29,11 +29,11 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 71636269561882670428252483600823257530420752963450
 ```
 
-Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+找出这 1000 个数字中 13 个相邻项的最大乘积。
 
-## Solution
+## 解答
 
-Answer: 23514624000
+答案：23514624000
 
 ```java
 public class Solution {
@@ -74,6 +74,6 @@ public class Solution {
 }
 ```
 
-## Discussion
+## 研讨
 
-Calculate the product of 13 adjacent terms successively and store the maximum value.
+依次求连续的 13 项的积，记录最大值。

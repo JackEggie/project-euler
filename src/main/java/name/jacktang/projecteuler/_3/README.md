@@ -27,6 +27,7 @@ public class Solution {
 	}
 }
 ```
+
 ## Discussion
 
 Find all the factors and determine whether they are prime or not.

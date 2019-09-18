@@ -41,6 +41,7 @@ public class Solution {
 	}
 }
 ```
+
 ## Discussion
 
 Find all the even-valued terms from small to large and sum them.

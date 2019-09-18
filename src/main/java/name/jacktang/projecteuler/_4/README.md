@@ -28,6 +28,7 @@ public class Solution {
 	}
 }
 ```
+
 ## Discussion
 
 Take the product from large to small, and determine whether it is palindrome.

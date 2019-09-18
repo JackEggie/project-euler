@@ -36,6 +36,7 @@ public class Solution {
 	}
 }
 ```
+
 ## Discussion
 
-Take the product from large to small, and determine whether it is palindrome.
+The answer should be all the prime factors' product of all the numbers from 1 to 20. The times a prime factor occurs should be the index of its highest power.

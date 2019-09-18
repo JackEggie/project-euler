@@ -1,4 +1,8 @@
-## Sum square difference
+## Language
+
+English | [简体中文](README-zh_CN.md)
+
+## [Sum square difference](https://projecteuler.net/problem=6)
 
 The sum of the squares of the first ten natural numbers is,
 
@@ -12,16 +16,25 @@ Hence the difference between the sum of the squares of the first ten natural num
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
-## Translation in Chinese
+## Solution
 
-前 10 个自然数的平方和如下：
+Answer: 25164150
 
-$$1^2 + 2^2 + ... + 10^2 = 385$$
+```java
+public class Solution {
+	public long resolve() {
+		long sum = 0;
+		long squareSum = 0;
+		for (long i = 1; i <= 100; i++) {
+			sum += i;
+			squareSum += i * i;
+		}
+		long sumSquare = sum * sum;
+		return sumSquare > squareSum ? sumSquare - squareSum : squareSum - sumSquare;
+	}
+}
+```
 
-前 10 个自然数的和的平方如下：
+## Discussion
 
-$$(1 + 2 + ... + 10)^2 = 55^2 = 3025$$
-
-因此，前 10 个自然数的平方和与和的平方之间的差值为 $3025 − 385 = 2640$。
-
-求前 100 个自然数的平方和与和的平方之间的差值。
+Calculate the square of the sum and the sum of the squares, then calculate the difference.
