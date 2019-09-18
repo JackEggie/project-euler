@@ -14,6 +14,10 @@ You can find the answer below, but I extremely don't recommend you to just copy 
 
 This is a Maven project. You can find the Java solution in my code, and you can test the solution with my test cases.
 
+## About Mathematical Formula
+
+Please install the [Google Chrome plugin](https://github.com/orsharir/github-mathjax) to display LaTeX or Mathjax expression correctly.
+
 ## Problems
 
 | No   | Title                                                                        | Answer      | Performance     |
@@ -29,10 +33,6 @@ This is a Maven project. You can find the Java solution in my code, and you can 
 | 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)  | 31875000    | less than 10 ms |
 
 I am working hard on the rest problems...
-
-## About Mathematical Formula
-
-Please install the [Google Chrome plugin](https://github.com/orsharir/github-mathjax) to display LaTeX or Mathjax expression correctly.
 
 ## Knowledge Base
 

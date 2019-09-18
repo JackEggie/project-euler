@@ -14,6 +14,10 @@
 
 本项目是一个 Maven 项目。代码中包含了用 Java 实现的解答步骤，项目中的测试用例可以直接运行。
 
+## 关于数学公式
+
+请安装以下 [Chrome 浏览器插件](https://github.com/orsharir/github-mathjax)以保证项目中的 LaTeX 和 Mathjax 表达式正常显示。
+
 ## 题目列表
 
 | 序号  | 标题                                                                                     | 答案        | 性能        |
@@ -29,10 +33,6 @@
 | 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9/README-zh_CN.md) | 31875000    | 低于 10 ms  |
 
 未完待续……
-
-## 关于数学公式
-
-请安装以下 [Chrome 浏览器插件](https://github.com/orsharir/github-mathjax)以保证项目中的 LaTeX 和 Mathjax 表达式正常显示。
 
 ## 知识储备
 
