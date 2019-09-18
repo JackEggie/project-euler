@@ -16,17 +16,17 @@
 
 ## 题目列表
 
-| 序号  | 标题                                                                     | 答案        | 性能        |
-| ----- | ----------------------------------------------------------------------- | ----------- | ----------- |
-| 1     | [3 或 5 的倍数](/src/main/java/name/jacktang/projecteuler/_1)            | 233168      | 低于 10 ms  |
-| 2     | [斐波那契数列中的偶数](/src/main/java/name/jacktang/projecteuler/_2)      | 4613732     | 低于 10 ms  |
-| 3     | [最大质因数](/src/main/java/name/jacktang/projecteuler/_3)               | 6857        | 低于 10 ms  |
-| 4     | [最大回文乘积](/src/main/java/name/jacktang/projecteuler/_4)             | 906609      | 低于 20 ms  |
-| 5     | [最小公倍数](/src/main/java/name/jacktang/projecteuler/_5)               | 232792560   | 低于 10 ms  |
-| 6     | [平方和与和平方之差](/src/main/java/name/jacktang/projecteuler/_6)        | 25164150    | 低于 10 ms  |
-| 7     | [第 10001 个质数](/src/main/java/name/jacktang/projecteuler/_7)          | 104743      | 低于 5 s    |
-| 8     | [数列中的最大乘积](/src/main/java/name/jacktang/projecteuler/_8)          | 23514624000 | 低于 10 ms  |
-| 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9) | 31875000    | 低于 10 ms  |
+| 序号  | 标题                                                                                     | 答案        | 性能        |
+| ----- | --------------------------------------------------------------------------------------- | ----------- | ----------- |
+| 1     | [3 或 5 的倍数](/src/main/java/name/jacktang/projecteuler/_1/README-zh_CN.md)            | 233168      | 低于 10 ms  |
+| 2     | [斐波那契数列中的偶数](/src/main/java/name/jacktang/projecteuler/_2/README-zh_CN.md)      | 4613732     | 低于 10 ms  |
+| 3     | [最大质因数](/src/main/java/name/jacktang/projecteuler/_3/README-zh_CN.md)               | 6857        | 低于 10 ms  |
+| 4     | [最大回文乘积](/src/main/java/name/jacktang/projecteuler/_4/README-zh_CN.md)             | 906609      | 低于 20 ms  |
+| 5     | [最小公倍数](/src/main/java/name/jacktang/projecteuler/_5/README-zh_CN.md)               | 232792560   | 低于 10 ms  |
+| 6     | [平方和与和平方之差](/src/main/java/name/jacktang/projecteuler/_6/README-zh_CN.md)        | 25164150    | 低于 10 ms  |
+| 7     | [第 10001 个质数](/src/main/java/name/jacktang/projecteuler/_7/README-zh_CN.md)          | 104743      | 低于 5 s    |
+| 8     | [数列中的最大乘积](/src/main/java/name/jacktang/projecteuler/_8/README-zh_CN.md)          | 23514624000 | 低于 10 ms  |
+| 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9/README-zh_CN.md) | 31875000    | 低于 10 ms  |
 
 未完待续……
 
