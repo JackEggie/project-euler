@@ -1,16 +1,16 @@
-## Language
+## 语言
 
-English | [简体中文](README-zh_CN.md)
+[English](README.md) | 简体中文
 
-## [Smallest multiple](https://projecteuler.net/problem=5)
+## [最小公倍数](https://projecteuler.net/problem=5)
 
-2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+2520 是可以被任意 1 到 10 中的数整除的最小数。
 
-What is the smallest positive number that is _evenly divisible_ by all of the numbers from 1 to 20?
+求可以被任意 1 到 20 中的数**整除**的最小数。
 
-## Solution
+## 解答
 
-Answer: 232792560
+答案：232792560
 
 ```java
 public class Solution {
@@ -36,6 +36,7 @@ public class Solution {
 	}
 }
 ```
-## Discussion
 
-Take the product from large to small, and determine whether it is palindrome.
+## 研讨
+
+从大到小依次求乘积，并判断其是否回文。

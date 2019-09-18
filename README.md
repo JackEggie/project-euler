@@ -1,20 +1,20 @@
-### Language
+## Language
 
 English | [简体中文](/README-zh_CN.md)
 
-### Introduction
+## Introduction
 
 This project is my personal translation and solution for the [Euler Project](https://projecteuler.net/). 
 
 > This project should only be used for personal study usage. If you find any abuse, please [contact me](mailto:er_tzw@163.com) or [report it](https://github.com/jackeggie/project-euler/issues/new).
 
-### How To Use This Project
+## How To Use This Project
 
 You can find the answer below, but I extremely don't recommend you to just copy the answer.
 
 This is a Maven project. You can find the Java solution in my code, and you can test the solution with my test cases.
 
-### Problems
+## Problems
 
 | No   | Title                                                                        | Answer      | Performance     |
 | ---- | ---------------------------------------------------------------------------- | ----------- | --------------- |
@@ -29,34 +29,44 @@ This is a Maven project. You can find the Java solution in my code, and you can 
 
 I am working hard on the rest problems...
 
-### About Mathematical Formula
+## About Mathematical Formula
 
 Please install the [Google Chrome plugin](https://github.com/orsharir/github-mathjax) to display LaTeX or Mathjax expression correctly.
 
-### Knowledge Base
+## Knowledge Base
 
-#### Factor
+### Factor
 
 In mathematics, a divisor of an integer n, also called a factor of n, is an integer m that may be multiplied by some integer to produce n.
 
-1. How to find factors of an integer?
+#### How to find factors of an integer?
 
 Find the smallest factor, and divide it. Just repeat that. See [my implementation](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java).
 
 Or you can easily get the factors by [Factor Calculator](https://www.calculator.net/factor-calculator.html).
 
-2. [Unique Factorization Theorem](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
+#### [Unique Factorization Theorem](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
 
-每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
+Every integer greater than 1 either is a prime number itself or can be represented as the product of prime numbers and that, moreover, this representation is unique, up to (except for) the order of the factors.
 
-如果你对因数有更多的疑问，请参见[因数](https://zh.wikipedia.org/wiki/%E5%9B%A0%E6%95%B8)。
+If you want to dig further more, please see [Factor](https://en.wikipedia.org/wiki/Divisor).
 
-#### 质数
+### Prime Number
 
-在大于 1 的自然数中，除了 1 和该数自身外，无法被其他自然数整除的数。
+A prime number (or a prime) is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
 
-1. 如何判断一个数是否质数
+#### How to tell if a number is prime?
 
-判断最小因数是否自身相等。参见[本项目实现](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java)。
+Determine if the minimum factor is equal to itself. See [my implementation](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java).
 
-如果你对质数有更多的疑问，请参见[质数](https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0)。
+If you want to dig further more, please see [Prime Number](https://en.wikipedia.org/wiki/Prime_number).
+
+### Palindromic Number
+
+A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number that remains the same when its digits are reversed. Like 16461, for example, it is "symmetrical".
+
+#### How to tell if a number is palindromic?
+
+Determine whether the first and last Numbers are the same one by one. See [my implementation](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java).
+
+If you want to dig further more, please see [Palindromic Number](https://en.wikipedia.org/wiki/Palindromic_number).

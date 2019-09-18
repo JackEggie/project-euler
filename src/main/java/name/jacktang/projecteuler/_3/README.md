@@ -1,14 +1,14 @@
-### Language
+## Language
 
 English | [简体中文](README-zh_CN.md)
 
-### [Largest prime factor](https://projecteuler.net/problem=3)
+## [Largest prime factor](https://projecteuler.net/problem=3)
 
 The prime factors of 13195 are 5, 7, 13 and 29.
 
 What is the largest prime factor of the number 600851475143 ?
 
-### Solution
+## Solution
 
 Answer: 6857
 
@@ -27,6 +27,6 @@ public class Solution {
 	}
 }
 ```
-### Discussion
+## Discussion
 
 Find all the factors and determine whether they are prime or not.
