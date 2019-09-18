@@ -26,6 +26,7 @@ This is a Maven project. You can find the Java solution in my code, and you can 
 | 6    | [Sum square difference](/src/main/java/name/jacktang/projecteuler/_6)        | 25164150    | less than 10 ms |
 | 7    | [10001st prime](/src/main/java/name/jacktang/projecteuler/_7)                | 104743      | less than 5 s   |
 | 8    | [Largest product in a series](/src/main/java/name/jacktang/projecteuler/_8)  | 23514624000 | less than 10 ms |
+| 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)  | 31875000    | less than 20 ms |
 
 I am working hard on the rest problems...
 
@@ -70,3 +71,9 @@ A palindromic number (also known as a numeral palindrome or a numeric palindrome
 Determine whether the first and last Numbers are the same one by one. See [my implementation](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java).
 
 If you want to dig further more, please see [Palindromic Number](https://en.wikipedia.org/wiki/Palindromic_number).
+
+### Pythagorean Theorem
+
+In mathematics, the Pythagorean theorem, also known as Pythagoras' theorem, is a fundamental relation in Euclidean geometry among the three sides of a right triangle. It states that the area of the square whose side is the hypotenuse (the side opposite the right angle) is equal to the sum of the areas of the squares on the other two sides. This theorem can be written as an equation relating the lengths of the sides a, b and c, often called the "Pythagorean equation": $a^2 + b^2 = c^2$.
+
+If you want to dig further more, please see [Pythagorean Theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem).
