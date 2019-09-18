@@ -26,7 +26,7 @@ This is a Maven project. You can find the Java solution in my code, and you can 
 | 6    | [Sum square difference](/src/main/java/name/jacktang/projecteuler/_6)        | 25164150    | less than 10 ms |
 | 7    | [10001st prime](/src/main/java/name/jacktang/projecteuler/_7)                | 104743      | less than 5 s   |
 | 8    | [Largest product in a series](/src/main/java/name/jacktang/projecteuler/_8)  | 23514624000 | less than 10 ms |
-| 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)  | 31875000    | less than 20 ms |
+| 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)  | 31875000    | less than 10 ms |
 
 I am working hard on the rest problems...
 

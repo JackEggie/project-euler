@@ -26,7 +26,7 @@
 | 6     | [平方和与和平方之差](/src/main/java/name/jacktang/projecteuler/_6)        | 25164150    | 低于 10 ms  |
 | 7     | [第 10001 个质数](/src/main/java/name/jacktang/projecteuler/_7)          | 104743      | 低于 5 s    |
 | 8     | [数列中的最大乘积](/src/main/java/name/jacktang/projecteuler/_8)          | 23514624000 | 低于 10 ms  |
-| 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9) | 31875000    | 低于 20 ms  |
+| 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9) | 31875000    | 低于 10 ms  |
 
 未完待续……
 
