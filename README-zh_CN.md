@@ -67,11 +67,11 @@
 
 质数筛是一种复杂度为 $O(n log log n)$ 的质数生成算法。其步骤如下：
 
-1. Create a list of consecutive integers from 2 through n: $(2, 3, 4, ..., n)$.
-2. Initially, let p equal 2, the smallest prime number.
-3. Enumerate the multiples of p by counting in increments of p from 2p to n, and mark them in the list (these will be $2p, 3p, 4p, ...$; the p itself should not be marked).
-4. Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
-5. When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
+1. 创建一个 2 到 n 的自然数列：$(2, 3, 4, ..., n)$。
+2. 将 p 初始化为 2，即最小的质数。
+3. 将数列中所有 p 的倍数都标记为非质数（除了 p 本身）。
+4. 将 p 置为数列中第一个大于 p 的未被标记的值，即下一个质数。然后重复步骤 3，直到全部数字都被标记为止。
+5. 当上面的循环终止时，如果数列中还存在没有被标记的数字，那么它们都是质数。
 
 ### 回文数
 
