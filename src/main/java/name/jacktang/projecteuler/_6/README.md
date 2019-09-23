@@ -21,18 +21,14 @@ Find the difference between the sum of the squares of the first one hundred natu
 Answer: 25164150
 
 ```java
-public class Solution {
-	public long resolve() {
-		long sum = 0;
-		long squareSum = 0;
-		for (long i = 1; i <= 100; i++) {
-			sum += i;
-			squareSum += i * i;
-		}
-		long sumSquare = sum * sum;
-		return sumSquare > squareSum ? sumSquare - squareSum : squareSum - sumSquare;
-	}
+long sum = 0;
+long squareSum = 0;
+for (long i = 1; i <= 100; i++) {
+	sum += i;
+	squareSum += i * i;
 }
+long sumSquare = sum * sum;
+return sumSquare > squareSum ? sumSquare - squareSum : squareSum - sumSquare;
 ```
 
 ## Discussion

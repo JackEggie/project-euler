@@ -13,28 +13,24 @@
 答案：232792560
 
 ```java
-public class Solution {
-	public long resolve() {
-		Set<Long> factors = new HashSet<>();
-		for (long i = 2; i <= 20; i++) {
-			if (MathUtil.isPrime(i)) {
-				factors.add(i);
-			}
-		}
-		for (long i = 20; i > 1; i--) {
-			long base = MathUtil.isPowerNumber(i, 5);
-			if (base != 0 && factors.contains(base)) {
-				factors.remove(base);
-				factors.add(i);
-			}
-		}
-		long ret = 1;
-		for (long num : factors) {
-			ret *= num;
-		}
-		return ret;
+Set<Long> factors = new HashSet<>();
+for (long i = 2; i <= 20; i++) {
+	if (MathUtil.isPrime(i)) {
+		factors.add(i);
 	}
 }
+for (long i = 20; i > 1; i--) {
+	long base = MathUtil.isPowerNumber(i, 5);
+	if (base != 0 && factors.contains(base)) {
+		factors.remove(base);
+		factors.add(i);
+	}
+}
+long ret = 1;
+for (long num : factors) {
+	ret *= num;
+}
+return ret;
 ```
 
 ## 研讨

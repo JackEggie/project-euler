@@ -13,19 +13,15 @@ What is the largest prime factor of the number 600851475143 ?
 Answer: 6857
 
 ```java
-public class Solution {
-	public long resolve() {
-		long num = 600851475143L;
-		TreeSet<Long> factors = new TreeSet<>(Comparator.reverseOrder());
-		factors.addAll(MathUtil.getFactors(num));
-		for (long factor : factors) {
-			if (MathUtil.isPrime(factor)) {
-				return factor;
-			}
-		}
-		return 0;
+long num = 600851475143L;
+TreeSet<Long> factors = new TreeSet<>(Comparator.reverseOrder());
+factors.addAll(MathUtil.getFactors(num));
+for (long factor : factors) {
+	if (MathUtil.isPrime(factor)) {
+		return factor;
 	}
 }
+return 0;
 ```
 
 ## Discussion

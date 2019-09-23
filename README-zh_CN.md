@@ -20,17 +20,18 @@
 
 ## 题目列表
 
-| 序号  | 标题                                                                                     | 答案        | 性能        |
-| ----- | --------------------------------------------------------------------------------------- | ----------- | ----------- |
-| 1     | [3 或 5 的倍数](/src/main/java/name/jacktang/projecteuler/_1/README-zh_CN.md)            | 233168      | 低于 10 ms  |
-| 2     | [斐波那契数列中的偶数](/src/main/java/name/jacktang/projecteuler/_2/README-zh_CN.md)      | 4613732     | 低于 10 ms  |
-| 3     | [最大质因数](/src/main/java/name/jacktang/projecteuler/_3/README-zh_CN.md)               | 6857        | 低于 10 ms  |
-| 4     | [最大回文乘积](/src/main/java/name/jacktang/projecteuler/_4/README-zh_CN.md)             | 906609      | 低于 20 ms  |
-| 5     | [最小公倍数](/src/main/java/name/jacktang/projecteuler/_5/README-zh_CN.md)               | 232792560   | 低于 10 ms  |
-| 6     | [平方和与和平方之差](/src/main/java/name/jacktang/projecteuler/_6/README-zh_CN.md)        | 25164150    | 低于 10 ms  |
-| 7     | [第 10001 个质数](/src/main/java/name/jacktang/projecteuler/_7/README-zh_CN.md)          | 104743      | 低于 5 s    |
-| 8     | [数列中的最大乘积](/src/main/java/name/jacktang/projecteuler/_8/README-zh_CN.md)          | 23514624000 | 低于 10 ms  |
-| 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9/README-zh_CN.md) | 31875000    | 低于 10 ms  |
+| 序号  | 标题                                                                                     | 答案         | 性能        |
+| ----- | --------------------------------------------------------------------------------------- | ------------ | ----------- |
+| 1     | [3 或 5 的倍数](/src/main/java/name/jacktang/projecteuler/_1/README-zh_CN.md)            | 233168       | 低于 10 ms  |
+| 2     | [斐波那契数列中的偶数](/src/main/java/name/jacktang/projecteuler/_2/README-zh_CN.md)      | 4613732      | 低于 10 ms  |
+| 3     | [最大质因数](/src/main/java/name/jacktang/projecteuler/_3/README-zh_CN.md)               | 6857         | 低于 10 ms  |
+| 4     | [最大回文乘积](/src/main/java/name/jacktang/projecteuler/_4/README-zh_CN.md)             | 906609       | 低于 20 ms  |
+| 5     | [最小公倍数](/src/main/java/name/jacktang/projecteuler/_5/README-zh_CN.md)               | 232792560    | 低于 10 ms  |
+| 6     | [平方和与和平方之差](/src/main/java/name/jacktang/projecteuler/_6/README-zh_CN.md)        | 25164150     | 低于 10 ms  |
+| 7     | [第 10001 个质数](/src/main/java/name/jacktang/projecteuler/_7/README-zh_CN.md)          | 104743       | 低于 5 s    |
+| 8     | [数列中的最大乘积](/src/main/java/name/jacktang/projecteuler/_8/README-zh_CN.md)          | 23514624000  | 低于 10 ms  |
+| 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9/README-zh_CN.md) | 31875000     | 低于 10 ms  |
+| 10    | [质数的和](/src/main/java/name/jacktang/projecteuler/_10/README-zh_CN.md)                | 142913828922 | 低于 50 ms  |
 
 未完待续……
 
@@ -39,6 +40,8 @@
 ### 因数
 
 因数是一个常见的数学名词，用于描述非零整数 a 和整数 b 之间存在的整除关系，即 b 可以被 a 整除。这里我们称 b 是 a 的倍数， a 是 b 的因数、约数或因子。
+
+如果你对因数有更多的疑问，请参见[因数](https://zh.wikipedia.org/wiki/%E5%9B%A0%E6%95%B8)。
 
 #### 如何求因数
 
@@ -50,27 +53,35 @@
 
 每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
 
-如果你对因数有更多的疑问，请参见[因数](https://zh.wikipedia.org/wiki/%E5%9B%A0%E6%95%B8)。
-
 ### 质数
 
 在大于 1 的自然数中，除了 1 和该数自身外，无法被其他自然数整除的数。
+
+如果你对质数有更多的疑问，请参见[质数](https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0)。
 
 #### 如何判断一个数是否质数
 
 判断最小因数是否等与自身。参见[本项目实现](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java)。
 
-如果你对质数有更多的疑问，请参见[质数](https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0)。
+#### [质数筛](https://zh.wikipedia.org/wiki/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95)
+
+质数筛是一种复杂度为 $O(n log log n)$ 的质数生成算法。其步骤如下：
+
+1. Create a list of consecutive integers from 2 through n: $(2, 3, 4, ..., n)$.
+2. Initially, let p equal 2, the smallest prime number.
+3. Enumerate the multiples of p by counting in increments of p from 2p to n, and mark them in the list (these will be $2p, 3p, 4p, ...$; the p itself should not be marked).
+4. Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
+5. When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
 
 ### 回文数
 
 回文数或迴文数是指一个像 14641 这样“对称”的数，即：将这个数的数字按相反的顺序重新排列后，所得到的数和原来的数一样。
 
+如果你对回文数有更多的疑问，请参见[回文数](https://zh.wikipedia.org/wiki/%E5%9B%9E%E6%96%87%E6%95%B0)。
+
 #### 如何判断一个数是否回文
 
 依次判断首尾数字是否相同。参见[本项目实现](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java)。
-
-如果你对回文数有更多的疑问，请参见[回文数](https://zh.wikipedia.org/wiki/%E5%9B%9E%E6%96%87%E6%95%B0)。
 
 ### 毕达哥拉斯定理
 

@@ -13,17 +13,13 @@ What is the 10 001st prime number?
 Answer: 104743
 
 ```java
-public class Solution {
-	public long resolve() {
-		long num = 2;
-		for (long i = 1; i <= 10_001; num++) {
-			if (MathUtil.isPrime(num)) {
-				i++;
-			}
-		}
-		return num - 1;
+long num = 2;
+for (long i = 1; i <= 10_001; num++) {
+	if (MathUtil.isPrime(num)) {
+		i++;
 	}
 }
+return num - 1;
 ```
 
 ## Discussion

@@ -16,6 +16,24 @@ public class MathUtil {
 		return true;
 	}
 
+	public static boolean[] generatePrimes(int limit) {
+		boolean[] numbers = new boolean[limit];
+		for (int i = 1; i < limit; i++) {
+			numbers[i] = true;
+		}
+		int i = 1;
+		while (i + 1 <= Math.sqrt(limit)) {
+			for (int multiple = 2; (i + 1) * multiple <= limit; multiple++) {
+				numbers[(i + 1) * multiple - 1] = false;
+			}
+			i++;
+			while (!numbers[i]) {
+				i++;
+			}
+		}
+		return numbers;
+	}
+
 	public static boolean isPalindrome(int num) {
 		String numString = String.valueOf(num);
 		for (int i = 0; i < numString.length() / 2 + 1; i++) {
