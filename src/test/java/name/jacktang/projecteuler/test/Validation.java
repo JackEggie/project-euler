@@ -50,6 +50,9 @@ public class Validation {
 		Assert.assertEquals(31875000L, new name.jacktang.projecteuler._9.Solution().resolve());
 	}
 
+	/**
+	 * performance warning: about 30 min
+	 */
 	@Test
 	public void validate10_1() {
 		Assert.assertEquals(142913828922L, new name.jacktang.projecteuler._10.Solution().resolve1());
