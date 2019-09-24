@@ -73,6 +73,8 @@ A prime number generator with $O(n log log n)$ complexity. Here's the steps:
 4. Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
 5. When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
 
+See [my implementation](/src/main/java/name/jacktang/projecteuler/util/MathUtil.java).
+
 ### Palindromic Number
 
 A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number that remains the same when its digits are reversed. Like 16461, for example, it is "symmetrical".
