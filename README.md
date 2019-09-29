@@ -32,6 +32,7 @@ Please install the [Google Chrome plugin](https://github.com/orsharir/github-mat
 | 8    | [Largest product in a series](/src/main/java/name/jacktang/projecteuler/_8)  | 23514624000  | less than 10 ms |
 | 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)  | 31875000     | less than 10 ms |
 | 10   | [Summation of primes](/src/main/java/name/jacktang/projecteuler/_10)         | 142913828922 | less than 50 ms |
+| 11   | [Largest product in a grid](/src/main/java/name/jacktang/projecteuler/_11)   | 70600674     | less than 10 ms |
 
 I am working hard on the rest problems...
 

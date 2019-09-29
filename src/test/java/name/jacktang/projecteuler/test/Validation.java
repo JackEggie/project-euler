@@ -62,4 +62,9 @@ public class Validation {
 	public void validate10_2() {
 		Assert.assertEquals(142913828922L, new name.jacktang.projecteuler._10.Solution().resolve2());
 	}
+
+	@Test
+	public void validate11() {
+		Assert.assertEquals(70600674L, new name.jacktang.projecteuler._11.Solution().resolve());
+	}
 }

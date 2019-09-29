@@ -32,6 +32,7 @@
 | 8     | [数列中的最大乘积](/src/main/java/name/jacktang/projecteuler/_8/README-zh_CN.md)          | 23514624000  | 低于 10 ms  |
 | 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9/README-zh_CN.md) | 31875000     | 低于 10 ms  |
 | 10    | [质数的和](/src/main/java/name/jacktang/projecteuler/_10/README-zh_CN.md)                | 142913828922 | 低于 50 ms  |
+| 11    | [矩阵中相邻数的最大乘积](/src/main/java/name/jacktang/projecteuler/_11/README-zh_CN.md)    | 70600674     | 低于 10 ms  |
 
 未完待续……
 
