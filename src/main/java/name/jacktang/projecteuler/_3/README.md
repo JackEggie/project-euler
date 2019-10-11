@@ -14,16 +14,9 @@ Answer: 6857
 
 ```java
 long num = 600851475143L;
-TreeSet<Long> factors = new TreeSet<>(Comparator.reverseOrder());
-factors.addAll(MathUtil.getFactors(num));
-for (long factor : factors) {
-	if (MathUtil.isPrime(factor)) {
-		return factor;
-	}
-}
-return 0;
+return MathUtil.getPrimeFactors(num).lastKey();
 ```
 
 ## Discussion
 
-Find all the factors and determine whether they are prime or not.
+Find all the prime factors and get the largest one.

@@ -14,16 +14,9 @@
 
 ```java
 long num = 600851475143L;
-TreeSet<Long> factors = new TreeSet<>(Comparator.reverseOrder());
-factors.addAll(MathUtil.getFactors(num));
-for (long factor : factors) {
-	if (MathUtil.isPrime(factor)) {
-		return factor;
-	}
-}
-return 0;
+return MathUtil.getPrimeFactors(num).lastKey();
 ```
 
 ## 研讨
 
-找出所有因数，并从大到小判断是否质数。
+找出所有质因数，并求其最大值。

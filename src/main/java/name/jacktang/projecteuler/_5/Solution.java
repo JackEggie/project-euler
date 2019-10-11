@@ -2,27 +2,22 @@ package name.jacktang.projecteuler._5;
 
 import name.jacktang.projecteuler.util.MathUtil;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Solution {
 	public long resolve() {
-		Set<Long> factors = new HashSet<>();
+		TreeMap<Long, Integer> factors = new TreeMap<>();
 		for (long i = 2; i <= 20; i++) {
-			if (MathUtil.isPrime(i)) {
-				factors.add(i);
-			}
-		}
-		for (long i = 20; i > 1; i--) {
-			long base = MathUtil.isPowerNumber(i, 5);
-			if (base != 0 && factors.contains(base)) {
-				factors.remove(base);
-				factors.add(i);
+			for (Map.Entry<Long, Integer> entry : MathUtil.getPrimeFactors(i).entrySet()) {
+				factors.put(entry.getKey(), factors.containsKey(entry.getKey()) ? Math.max(entry.getValue(), factors.get(entry.getKey())) : entry.getValue());
 			}
 		}
 		long ret = 1;
-		for (long num : factors) {
-			ret *= num;
+		for (Map.Entry<Long, Integer> entry : factors.entrySet()) {
+			for (int i = 0; i < entry.getValue(); i++) {
+				ret *= entry.getKey();
+			}
 		}
 		return ret;
 	}

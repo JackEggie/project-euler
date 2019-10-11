@@ -33,6 +33,7 @@
 | 9     | [毕达哥拉斯三元组的一个特例](/src/main/java/name/jacktang/projecteuler/_9/README-zh_CN.md) | 31875000     | 低于 10 ms  |
 | 10    | [质数的和](/src/main/java/name/jacktang/projecteuler/_10/README-zh_CN.md)                | 142913828922 | 低于 50 ms  |
 | 11    | [矩阵中相邻数的最大乘积](/src/main/java/name/jacktang/projecteuler/_11/README-zh_CN.md)    | 70600674     | 低于 10 ms  |
+| 12    | [三角形数的因数数量](/src/main/java/name/jacktang/projecteuler/_12/README-zh_CN.md)       | 76576500     | 低于 150 ms |
 
 未完待续……
 
@@ -53,6 +54,12 @@
 #### [质因数分解](https://zh.wikipedia.org/wiki/%E7%AE%97%E6%9C%AF%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86)
 
 每个大于1的自然数，要么本身就是质数，要么可以写为2个或以上的质数的积，而且这些质因子按大小排列之后，写法仅有一种方式。
+
+#### 因数的数量
+
+因数的数量等于其各个质因数的幂指数加一再相乘。使用幂指数来计算是因为因数的可能组成方式是各个质因数的出现次数，需要加一的原因则是质因数可以出现 0 次。
+
+详见[计算因数的数量](https://www.basic-mathematics.com/counting-factors.html)。
 
 ### 质数
 

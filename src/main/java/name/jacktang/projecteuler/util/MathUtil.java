@@ -1,6 +1,6 @@
 package name.jacktang.projecteuler.util;
 
-import java.util.TreeSet;
+import java.util.TreeMap;
 
 public class MathUtil {
 
@@ -44,18 +44,20 @@ public class MathUtil {
 		return true;
 	}
 
-	/**
-	 * @param num a positive number at least 2
-	 * @return a set of factors in asc order
-	 */
-	public static TreeSet<Long> getFactors(long num) {
-		TreeSet<Long> factors = new TreeSet<>();
-		for (long factor = 2; factor < num; factor++) {
-			if (num % factor == 0) {
-				factors.add(factor);
-				factors.add(num / factor);
-				num = num / factor;
+	public static TreeMap<Long, Integer> getPrimeFactors(long num) {
+		TreeMap<Long, Integer> factors = new TreeMap<>();
+		while (num % 2 == 0) {
+			factors.put(2L, factors.containsKey(2L) ? factors.get(2L) + 1 : 1);
+			num /= 2;
+		}
+		for (int i = 3; i <= Math.sqrt(num); i += 2) {
+			while (num % i == 0) {
+				factors.put((long) i, factors.containsKey((long) i) ? factors.get((long) i) + 1 : 1);
+				num /= i;
 			}
+		}
+		if (num > 2) {
+			factors.put(num, 1);
 		}
 		return factors;
 	}

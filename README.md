@@ -20,19 +20,20 @@ Please install the [Google Chrome plugin](https://github.com/orsharir/github-mat
 
 ## Problems
 
-| No   | Title                                                                        | Answer       | Performance     |
-| ---- | ---------------------------------------------------------------------------- | ------------ | --------------- |
-| 1    | [Multiples of 3 and 5](/src/main/java/name/jacktang/projecteuler/_1)         | 233168       | less than 10 ms |
-| 2    | [Even Fibonacci numbers](/src/main/java/name/jacktang/projecteuler/_2)       | 4613732      | less than 10 ms |
-| 3    | [Largest prime factor](/src/main/java/name/jacktang/projecteuler/_3)         | 6857         | less than 10 ms |
-| 4    | [Largest palindrome product](/src/main/java/name/jacktang/projecteuler/_4)   | 906609       | less than 20 ms |
-| 5    | [Smallest multiple](/src/main/java/name/jacktang/projecteuler/_5)            | 232792560    | less than 10 ms |
-| 6    | [Sum square difference](/src/main/java/name/jacktang/projecteuler/_6)        | 25164150     | less than 10 ms |
-| 7    | [10001st prime](/src/main/java/name/jacktang/projecteuler/_7)                | 104743       | less than 5 s   |
-| 8    | [Largest product in a series](/src/main/java/name/jacktang/projecteuler/_8)  | 23514624000  | less than 10 ms |
-| 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)  | 31875000     | less than 10 ms |
-| 10   | [Summation of primes](/src/main/java/name/jacktang/projecteuler/_10)         | 142913828922 | less than 50 ms |
-| 11   | [Largest product in a grid](/src/main/java/name/jacktang/projecteuler/_11)   | 70600674     | less than 10 ms |
+| No   | Title                                                                               | Answer       | Performance      |
+| ---- | ----------------------------------------------------------------------------------- | ------------ | ---------------- |
+| 1    | [Multiples of 3 and 5](/src/main/java/name/jacktang/projecteuler/_1)                | 233168       | less than 10 ms  |
+| 2    | [Even Fibonacci numbers](/src/main/java/name/jacktang/projecteuler/_2)              | 4613732      | less than 10 ms  |
+| 3    | [Largest prime factor](/src/main/java/name/jacktang/projecteuler/_3)                | 6857         | less than 10 ms  |
+| 4    | [Largest palindrome product](/src/main/java/name/jacktang/projecteuler/_4)          | 906609       | less than 20 ms  |
+| 5    | [Smallest multiple](/src/main/java/name/jacktang/projecteuler/_5)                   | 232792560    | less than 10 ms  |
+| 6    | [Sum square difference](/src/main/java/name/jacktang/projecteuler/_6)               | 25164150     | less than 10 ms  |
+| 7    | [10001st prime](/src/main/java/name/jacktang/projecteuler/_7)                       | 104743       | less than 5 s    |
+| 8    | [Largest product in a series](/src/main/java/name/jacktang/projecteuler/_8)         | 23514624000  | less than 10 ms  |
+| 9    | [Special Pythagorean triplet](/src/main/java/name/jacktang/projecteuler/_9)         | 31875000     | less than 10 ms  |
+| 10   | [Summation of primes](/src/main/java/name/jacktang/projecteuler/_10)                | 142913828922 | less than 50 ms  |
+| 11   | [Largest product in a grid](/src/main/java/name/jacktang/projecteuler/_11)          | 70600674     | less than 10 ms  |
+| 12   | [Highly divisible triangular number](/src/main/java/name/jacktang/projecteuler/_12) | 76576500     | less than 150 ms |
 
 I am working hard on the rest problems...
 
@@ -53,6 +54,12 @@ Or you can easily get the factors by [Factor Calculator](https://www.calculator.
 #### [Unique Factorization Theorem](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
 
 Every integer greater than 1 either is a prime number itself or can be represented as the product of prime numbers and that, moreover, this representation is unique, up to (except for) the order of the factors.
+
+#### Counting Factors
+
+Number of factors equals each prime factor's power exponent plus 1 and multiply together. We use power exponent due to the possible composition of a factor is affected by certain prime factor's count. And we should take the condition of power exponent equals 0 into consideration, so we add 1 on the power exponents.
+
+See [Counting Factors](https://www.basic-mathematics.com/counting-factors.html).
 
 ### Prime Number
 
