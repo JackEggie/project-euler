@@ -34,6 +34,7 @@ Please install the [Google Chrome plugin](https://github.com/orsharir/github-mat
 | 10   | [Summation of primes](/src/main/java/name/jacktang/projecteuler/_10)                | 142913828922 | less than 50 ms  |
 | 11   | [Largest product in a grid](/src/main/java/name/jacktang/projecteuler/_11)          | 70600674     | less than 10 ms  |
 | 12   | [Highly divisible triangular number](/src/main/java/name/jacktang/projecteuler/_12) | 76576500     | less than 150 ms |
+| 13   | [Large sum](/src/main/java/name/jacktang/projecteuler/_13)                          | 5537376230   | less than 50 ms  |
 
 I am working hard on the rest problems...
 
