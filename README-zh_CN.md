@@ -35,6 +35,7 @@
 | 11    | [矩阵中相邻数的最大乘积](/src/main/java/name/jacktang/projecteuler/_11/README-zh_CN.md)    | 70600674     | 低于 10 ms  |
 | 12    | [三角形数的因数数量](/src/main/java/name/jacktang/projecteuler/_12/README-zh_CN.md)       | 76576500     | 低于 150 ms |
 | 13    | [大数求和](/src/main/java/name/jacktang/projecteuler/_13/README-zh_CN.md)                | 5537376230   | 低于 50 ms  |
+| 14    | [最长考拉兹数列](/src/main/java/name/jacktang/projecteuler/_14/README-zh_CN.md)           | 837799       | 低于 1 s    |
 
 未完待续……
 
