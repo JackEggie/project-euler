@@ -6,8 +6,8 @@ English | [简体中文](README-zh_CN.md)
 
 The following iterative sequence is defined for the set of positive integers:
 
-$$n → n/2 \text{(n is even)}$$
-$$n → 3n + 1 \text{(n is odd)}$$
+$$n → n/2 \text{ (n is even)}$$
+$$n → 3n + 1 \text{ (n is odd)}$$
 
 Using the rule above and starting with 13, we generate the following sequence:
 
